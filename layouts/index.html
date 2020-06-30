@@ -6,19 +6,20 @@
 
 <div class="splash-container">
         
+  <div>
+    <img class="portrait inline-block" src="/images/portrait_circle.png" alt="Italian Trulli" width="200" height="200"> 
+    <div class="splash inline-block">
+      <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
+      {{ if isset .Params "handle" }}
+      <span class="handle">@{{ .Params.handle }}</span>
+      {{ end }}
+      <h2>
+        {{ .Params.subheading }} <span id="typewriter"></span>
+      </h2>    
 
-  <div class="splash">
-    
-    <h1>{{ .Params.heading }}<span class="fancy">.</span></h1>
-    {{ if isset .Params "handle" }}
-    <span class="handle">@{{ .Params.handle }}</span>
-    {{ end }}
-    <h2>
-      {{ .Params.subheading }} <span id="typewriter"></span>
-    </h2>    
-
-    {{ partial "social-icons.html" .}}
-  </div>
+      {{ partial "social-icons.html" .}}
+    </div>
+</div>
 </div>
 
 <script type="module">  
