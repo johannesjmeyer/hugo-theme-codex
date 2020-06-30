@@ -21,3 +21,7 @@ main {
     padding-top: calc(3rem + #{$burgerContainerHeight});
   }
 }
+
+.fancy {
+  color: $primary;
+}

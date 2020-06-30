@@ -6,6 +6,6 @@ description: ""
 keywords: []
 draft: true
 tags: []
-math: false
+math: true
 toc: false
 ---

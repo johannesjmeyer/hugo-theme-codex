@@ -1,3 +1,17 @@
+<!--
+        
+<div id="typewriter"></div>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<script type='text/javascript'>
+  import Typewriter from 'typewriter-effect/dist/core';
+  
+  new Typewriter('#typewriter', {
+    strings: ['Hello', 'World'],
+    autoStart: true,
+  });
+</script>
+-->
 {{ define "styles" }}
     {{ $.Scratch.Set "style_opts" (dict "src" "scss/pages/about.scss" "dest" "css/about.css") }}
 {{ end }}
@@ -12,7 +26,8 @@
     <span class="handle">@{{ .Params.handle }}</span>
     {{ end }}
     <h2>
-      {{ .Params.subheading }}
+      {{ .Params.subheading }}<br/>
+      {{ .Params.subheading2 }}
     </h2>
     <!-- Replace MEEEEE -->
 
@@ -21,3 +36,4 @@
 </div>
 
 {{ end }}
+
