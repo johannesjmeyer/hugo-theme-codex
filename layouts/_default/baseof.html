@@ -4,6 +4,11 @@
 <head>
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type="text/javascript">
+    import Typewriter from 'typewriter-effect/dist/core';
+  </script>
+
   <meta charset="UTF-8">
   <meta name="language" content="en">
   <meta name="description" content="{{ if .IsHome}}{{ .Site.Params.Description }}{{ else }}{{.Page.Params.Description}}{{ end }}">
