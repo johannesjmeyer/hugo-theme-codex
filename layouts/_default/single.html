@@ -9,7 +9,7 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">{{.Title}}</h1>
+            <h1 id="post__title">{{.Title}}<span class="fancy">.</span></h1>
             <time datetime="{{ .Date }}" class="post__date"
             >{{ .Date.Format $dateFormat }}</time>
           </header>
