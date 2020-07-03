@@ -13,7 +13,6 @@
 }
 
 .post__header .tags__list {
-  display: none;
   padding-left: 0;
 
   @media screen and (max-width: $medium - 1) {
@@ -38,12 +37,6 @@
   text-decoration: none;
   color: $grey;
   font-size: 0.9rem;
-
-  &::before {
-    content: '#';
-    font-size: 0.7rem;
-    padding-right: 1px;
-  }
 
   &:hover {
     color: $darkGrey;
