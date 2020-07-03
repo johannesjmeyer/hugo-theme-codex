@@ -33,6 +33,24 @@
   }
 }
 
+.post__preview {
+  span, p {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {    
+    pointer-events: none; 
+    cursor: default; 
+    text-decoration: none; 
+    color: black; 
+  }
+
+}
+
 .tag__link {
   text-decoration: none;
   color: $grey;
@@ -47,4 +65,20 @@
 .post-list__container {
   display: flex;
   justify-content: space-between;
+
+  .preview__image {
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 2.3rem;
+  }
+
+  .post__text {
+    display: inline-block;
+    width: 78%;
+    margin-left: 30px;
+  }
 }
