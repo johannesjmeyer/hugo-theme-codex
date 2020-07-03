@@ -10,8 +10,10 @@
         <div class="post">
           <header class="post__header">
             <h1 id="post__title">{{.Title}}<span class="fancy">.</span></h1>
+            {{ if not .Params.hide_date }}
             <time datetime="{{ .Date }}" class="post__date"
             >{{ .Date.Format $dateFormat }}</time>
+            {{ end }}
           </header>
           <article class="post__content">
               {{ partial "anchored-headings.html" .Content }}
