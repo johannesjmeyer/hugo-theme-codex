@@ -239,6 +239,19 @@ footer {
   a:hover {
     text-decoration: underline;
   }
+
+  sup {
+    vertical-align: baseline;
+    font-size: 1rem;
+
+    a::before {
+      content: "[";
+    }
+
+    a::after {
+      content: "]";
+    }
+  }
 }
 
 .twitter-tweet.twitter-tweet-rendered {
@@ -258,5 +271,39 @@ table {
   td {
     padding: 0.5em 1em;
     border: 1px double $greyTableBorder;
+  }
+}
+
+.footnotes {
+  font-size: 0.8rem;
+
+  hr {
+    display: none;
+  }
+
+  p {
+    margin-top: 0.2rem;
+    line-height: 1.2rem;
+  }
+
+  ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: block;
+    margin-bottom: .5em;
+    margin-left: 2em;
+  }
+  
+  li::before {
+    content: "[" counter(item) "] ";
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
+    float: left;
+    line-height: 1.2rem;
   }
 }
