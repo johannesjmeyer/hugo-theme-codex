@@ -13,6 +13,8 @@
             {{ if not .Params.hide_date }}
             <time datetime="{{ .Date }}" class="post__date"
             >{{ .Date.Format $dateFormat }}</time>
+            {{ else }}
+            <span>&nbsp;</span>
             {{ end }}
           </header>
           <article class="post__content">
