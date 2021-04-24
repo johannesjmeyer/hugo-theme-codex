@@ -51,5 +51,8 @@ main {
 
 .social-icons {
   justify-content: flex-start;
+  @media screen and (max-width: 1109px) {
+    justify-content: center;
+  }
   padding-top: 2rem;
 }

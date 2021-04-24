@@ -38,3 +38,9 @@ main {
     justify-self: center;
   }
 }
+
+.splash-container > div {
+  @media screen and (max-width: 1109px) {
+    text-align: center;
+  }
+}
